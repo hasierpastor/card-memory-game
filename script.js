@@ -12,6 +12,7 @@ var currentLowScore = document.getElementById('low-score');
 var firstGameButton = document.getElementById('first-game');
 var cardContainer = document.getElementById('card-container');
 var header = document.getElementById('head');
+var body = document.getElementsByName('body');
 
 //shuffle cards
 function randomize_cards(arr) {
@@ -68,6 +69,8 @@ function endGame() {
       lowScore = localStorage.getItem('newLowScore');
     }
     modal.classList.add('show');
+    cardContainer.classList.add('opacity');
+    score.classList.add('opacity');
     finalScore.innerText = 'Final score: ' + clicks;
     currentLowScore.innerText = 'Low score: ' + lowScore;
   }
@@ -77,6 +80,8 @@ function newGame() {
   cards.forEach(function(card) {
     card.classList.remove('is-flipped');
     modal.classList.remove('show');
+    cardContainer.classList.remove('opacity');
+    score.classList.remove('opacity');
     matched_cards = [];
     clicks = 0;
     score.innerText = 'score: ';

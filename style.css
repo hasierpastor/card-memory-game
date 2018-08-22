@@ -2,7 +2,7 @@ body {
   height: 100%;
   width: 100%;
   display: inline-block;
-  /* background: lightskyblue; */
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
 
 #head {
@@ -12,8 +12,8 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 300px;
   margin: auto;
 }
 
@@ -21,15 +21,29 @@ body {
   display: none;
 }
 
+h1 {
+  color: white;
+}
+
+#head,
+.overlay-content {
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+}
+
 #first-game {
   margin-left: 140px;
   margin-top: 25px;
+  padding: 10px 10px;
+  width: 175px;
 }
 
 #score {
   text-align: center;
   display: block;
   margin: 25px 25px;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
 }
 
 #score.hide {
@@ -44,13 +58,20 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
-  /* background: lightblue; */
   perspective: 600px;
   margin-top: 25px;
 }
 
 #card-container.hide {
   display: none;
+}
+
+#card-container.opacity {
+  opacity: 0.2;
+}
+
+#score.opacity {
+  opacity: 0.2;
 }
 
 .card {
@@ -62,6 +83,7 @@ body {
   transition: transform 0.5s;
   transform-style: preserve-3d;
   cursor: pointer;
+  border: none;
 }
 
 .front,
@@ -102,15 +124,35 @@ body {
 }
 
 .overlay-content {
-  margin: 70px auto;
-  padding: 20px;
-  background: #ffffff;
-  border-radius: 5px;
-  width: 85%;
+  margin: 200px 470px;
+  padding: 25px;
+  background: linear-gradient(to bottom, #000000, #e74c3c);
+  width: 510px;
+  height: 225px;
   position: relative;
+  border-radius: 15px;
+  display: inline-block;
 }
 
 .show {
   visibility: visible;
   opacity: 100;
+}
+
+#new-game {
+  margin-left: 160px;
+  padding: 10px;
+}
+
+#final-score,
+#low-score {
+  padding: 10px 10px;
+}
+
+#congrats {
+  margin-left: 10px;
+}
+
+span {
+  size: 4em;
 }
