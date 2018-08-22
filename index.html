@@ -7,58 +7,89 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
-  <div class="card-cotainer">
-    <div class="card">
-      <img class="front" src="">
-      <img class="bakc"  src="">
-    </div>
-    <div class="card">
-        <img class="front" src="">
-        <img class="bakc"  src="">
-    </div>
-    <div class="card">
-        <img class="front" src="">
-        <img class="bakc"  src="">
-    </div>
-    <div class="card">
-        <img class="front" src="">
-        <img class="bakc"  src="">
-    </div>
-    <div class="card">
-        <img class="front" src="">
-        <img class="bakc"  src="">
-    </div>
-    <div class="card">
-        <img class="front" src="">
-        <img class="bakc"  src="">
-    </div>
-    <div class="card">
-        <img class="front" src="">
-        <img class="bakc"  src="">
-    </div>
-    <div class="card">
-        <img class="front" src="">
-        <img class="bakc"  src="">
-    </div>
-    <div class="card">
-        <img class="front" src="">
-        <img class="bakc"  src="">
-    </div>
-    <div class="card">
-        <img class="front" src="">
-        <img class="bakc"  src="">
-    </div>
-    <div class="card">
-        <img class="front" src="">
-        <img class="bakc"  src="">
-    </div>
-    <div class="card">
-        <img class="front" src="">
-        <img class="bakc"  src="">
-    </div>
+  <div id="head">
+      <h1>CRYPTO CARD GAME</h1>
+      <button type="button" class="btn btn-large btn-primary" id="first-game">New Game</button>
   </div>
+  <div id="score" class="hide"><h5>score:</h5></div>
+  <div id="card-container" class="hide">
+    <div class="card" data-name="ethereum">
+        <img class="front" src="/Users/sherlock/Desktop/card_memory_game/ethereum-1.svg">
+        <img class="back" src=" /Users/sherlock/Desktop/card_memory_game/blockchain.svg">
+    </div>
+    <div class="card" data-name="ethereum">
+        <img class="front" src="/Users/sherlock/Desktop/card_memory_game/ethereum-1.svg">
+        <img class="back" src="/Users/sherlock/Desktop/card_memory_game/blockchain.svg">
+    </div>
+    <div class="card" data-name="bitcoin">
+        <img class="front" src="/Users/sherlock/Desktop/card_memory_game/bitcoin.svg">
+        <img class="back" src="/Users/sherlock/Desktop/card_memory_game/blockchain.svg">
+    </div>
+    <div class="card" data-name="bitcoin">
+        <img class="front" src="/Users/sherlock/Desktop/card_memory_game/bitcoin.svg">
+        <img class="back" src="/Users/sherlock/Desktop/card_memory_game/blockchain.svg">
+    </div>
+    <div class="card" data-name="cardano">
+        <img class="front" src="/Users/sherlock/Desktop/card_memory_game/cardano.svg">
+        <img class="back" src="/Users/sherlock/Desktop/card_memory_game/blockchain.svg">
+    </div>
+    <div class="card" data-name="cardano">
+        <img class="front" src="/Users/sherlock/Desktop/card_memory_game/cardano.svg">
+        <img class="back" src="/Users/sherlock/Desktop/card_memory_game/blockchain.svg">
+    </div>
+    <div class="card" data-name="litecoin">
+        <img class="front" src="/Users/sherlock/Desktop/card_memory_game/litecoin.svg">
+        <img class="back" src="/Users/sherlock/Desktop/card_memory_game/blockchain.svg">
+    </div>
+    <div class="card" data-name="litecoin">
+        <img class="front" src="/Users/sherlock/Desktop/card_memory_game/litecoin.svg">
+        <img class="back" src="/Users/sherlock/Desktop/card_memory_game/blockchain.svg">
+    </div>
+    <div class="card" data-name="neo">
+        <img class="front" src="/Users/sherlock/Desktop/card_memory_game/neo.svg">
+        <img class="back" src="/Users/sherlock/Desktop/card_memory_game/blockchain.svg">
+    </div>
+    <div class="card" data-name="neo">
+        <img class="front" src="/Users/sherlock/Desktop/card_memory_game/neo.svg">
+        <img class="back" src="/Users/sherlock/Desktop/card_memory_game/blockchain.svg">
+    </div>
+    <div class="card" data-name="stellar">
+        <img class="front" src="/Users/sherlock/Desktop/card_memory_game/stellar.svg">
+        <img class="back" src="/Users/sherlock/Desktop/card_memory_game/blockchain.svg">
+    </div>
+    <div class="card" data-name="stellar">
+        <img class="front" src="/Users/sherlock/Desktop/card_memory_game/stellar.svg">
+        <img class="back" src="/Users/sherlock/Desktop/card_memory_game/blockchain.svg">
+    </div>
+    <div class="card" data-name="iota">
+        <img class="front" src="/Users/sherlock/Desktop/card_memory_game/iota-1.svg">
+        <img class="back" src="/Users/sherlock/Desktop/card_memory_game/blockchain.svg">
+    </div>
+    <div class="card" data-name="iota">
+        <img class="front" src="/Users/sherlock/Desktop/card_memory_game/iota-1.svg">
+        <img class="back" src="/Users/sherlock/Desktop/card_memory_game/blockchain.svg">
+    </div>
+    <div class="card" data-name="ripple">
+        <img class="front" src="/Users/sherlock/Desktop/card_memory_game/ripple-2.svg">
+        <img class="back" src="/Users/sherlock/Desktop/card_memory_game/blockchain.svg">
+    </div>
+    <div class="card" data-name="ripple">
+        <img class="front" src="/Users/sherlock/Desktop/card_memory_game/ripple-2.svg">
+        <img class="back" src="/Users/sherlock/Desktop/card_memory_game/blockchain.svg">
+    </div>
+</div>
+<div class="overlay" id="modal">
+    <div class="overlay-content">
+    <h4 id="congrats">Congratulations you did it!</h4>
+    <h5 id="final-score"></h5>
+    <h5 id="low-score"></h5>
+    <button type="button" id="new-game">New Game</button>
+    </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
