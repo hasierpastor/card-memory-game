@@ -12,7 +12,6 @@ var currentLowScore = document.getElementById('low-score');
 var firstGameButton = document.getElementById('first-game');
 var cardContainer = document.getElementById('card-container');
 var header = document.getElementById('head');
-var body = document.getElementsByName('body');
 
 //shuffle cards
 function randomize_cards(arr) {
