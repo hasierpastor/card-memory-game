@@ -4,7 +4,7 @@ var lockboard = false;
 var clicks = 0;
 var score = document.getElementById('score');
 var matched_cards = [];
-var lowScore = Infinity;
+var lowestScore = localStorage.getItem('newLowScore');
 var newGameButton = document.getElementById('new-game');
 var modal = document.getElementById('modal');
 var finalScore = document.getElementById('final-score');
@@ -63,15 +63,19 @@ function flip_card() {
 
 function endGame() {
   if (matched_cards.length === 16) {
-    if (clicks < lowScore) {
-      localStorage.setItem('newLowScore', clicks);
-      lowScore = localStorage.getItem('newLowScore');
+    if (lowestScore === null) {
+      lowestScore = Infinity;
     }
+    if (clicks < lowestScore) {
+      localStorage.setItem('newLowScore', clicks);
+      lowestScore = localStorage.getItem('newLowScore');
+    }
+    console.log(lowestScore);
     modal.classList.add('show');
     cardContainer.classList.add('opacity');
     score.classList.add('opacity');
     finalScore.innerText = 'Final score: ' + clicks;
-    currentLowScore.innerText = 'Low score: ' + lowScore;
+    currentLowScore.innerText = 'Low score: ' + lowestScore;
   }
 }
 
