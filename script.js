@@ -22,6 +22,8 @@
     });
   };
 
+  newGameButton.addEventListener('click', newGame);
+
   //shuffle cards
   function randomizeCards(arr) {
     for (let i = 0; i < arr.length; i++) {
@@ -104,6 +106,4 @@
     score.classList.remove('hide');
     header.classList.add('hide');
   }
-
-  newGameButton.addEventListener('click', newGame);
 });
