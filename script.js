@@ -106,4 +106,4 @@
     score.classList.remove('hide');
     header.classList.add('hide');
   }
-});
+})();
