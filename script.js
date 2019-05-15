@@ -1,18 +1,18 @@
 (function() {
-  let cards = document.querySelectorAll('.card');
-  let flipped_cards = [];
-  let lockboard = false;
-  let clicks = 0;
-  let score = document.getElementById('score');
-  let matched_cards = [];
-  let lowestScore = localStorage.getItem('newLowScore');
-  let newGameButton = document.getElementById('new-game');
-  let modal = document.getElementById('modal');
-  let finalScore = document.getElementById('final-score');
-  let currentLowScore = document.getElementById('low-score');
-  let firstGameButton = document.getElementById('first-game');
-  let cardContainer = document.getElementById('card-container');
-  let header = document.getElementById('head');
+  var cards = document.querySelectorAll('.card');
+  var flipped_cards = [];
+  var lockboard = false;
+  var clicks = 0;
+  var score = document.getElementById('score');
+  var matched_cards = [];
+  var lowestScore = localStorage.getItem('newLowScore');
+  var newGameButton = document.getElementById('new-game');
+  var modal = document.getElementById('modal');
+  var finalScore = document.getElementById('final-score');
+  var currentLowScore = document.getElementById('low-score');
+  var firstGameButton = document.getElementById('first-game');
+  var cardContainer = document.getElementById('card-container');
+  var header = document.getElementById('head');
 
   window.onload = function() {
     firstGameButton.addEventListener('click', firstGame);
